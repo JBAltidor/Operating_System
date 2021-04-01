@@ -1,7 +1,7 @@
 [bits 32] ; En mode 32-bit protected 
 
 
-VIDEO_MEMORY equ 0xb8000 ; Ecrean en mode text
+VIDEO_MEMORY equ 0xb8000 ; Ecran en mode text
 WHITE_ON_BLACK equ 0x0f ; Definition du mode d'affichage 
 
 print_string_pm:
