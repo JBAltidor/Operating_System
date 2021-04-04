@@ -41,7 +41,7 @@ static void keyboard_callback(registers_t regs) {
         char str[2] = {letter, '\0'};
         if (key_buffer[0] == '\0')
         {
-            kprint("  ADMIN>");
+            kprint("  ADMIN> ");
         }
         append(key_buffer, letter);
         kprint(str);

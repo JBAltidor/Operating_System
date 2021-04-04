@@ -19,8 +19,8 @@ BEGIN_PM: ; Nous sommes maintenant en mode 32 bits protege.
     call print_string_pm ; Affichage du message de passage en 32 bits.
     jmp $
 
-MSG_REAL_MODE db "Demmarage en mode 16-bit reel", 0
-MSG_PROT_MODE db "Passage en mode 32-bit protege     ", 0
+MSG_REAL_MODE db "  >Nou komanse an 16-bit Real Mode", 0
+MSG_PROT_MODE db "  >Nou pase an 32-bit Protected Mode", 0
 
 ; bootsector
 times 510-($-$$) db 0

@@ -8,7 +8,7 @@ void main() {
     irq_install();
     kprint("              ********  Byenvini nan OS nou an  ********\n");
     kprint("\n");
-    kprint(">Ekri on komand. Ekri 'ED' pou'w jwenn lis komand yo.\n");
+    kprint("> Ekri on komand. Ekri 'ED' pou'w jwenn lis komand yo.\n");
     kprint("\n");
 }
 //This handles user input
@@ -22,8 +22,8 @@ void user_input(char *input) {
     else if((strcmp(input, "ED") == 0))
     {
         
-        kprint(">CLEAR :Retire tout sak sou ekran an.\n");
-        kprint(">SOTI  :Pouw femen odinate a (kanpe CPU an).\n");
+        kprint("> CLEAR :Retire tout sak sou ekran an.\n");
+        kprint("> SOTI  :Pouw femen odinate a (kanpe CPU an).\n");
 
     }
      else if((strcmp(input, "CLEAR") == 0))
@@ -34,7 +34,7 @@ void user_input(char *input) {
     }
     else
     {
-        kprint("ADMIN>Ou ekri '");
+        kprint("ADMIN> Ou ekri '");
         kprint(input);
         kprint("'. Li pa on komand.\n");
     }
