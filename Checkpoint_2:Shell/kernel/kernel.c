@@ -6,7 +6,7 @@
 void main() {
     isr_install();
     irq_install();
-    kprint("              ********  Byenvini nan OS nou an  ********\n");
+    kprint("              ********  Byenvini nan OS nou anmmmm  ********\n");
     kprint("\n");
     kprint("> Ekri on komand. Ekri 'ED' pou'w jwenn lis komand yo.\n");
     kprint("\n");
