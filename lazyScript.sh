@@ -20,17 +20,18 @@ while :
 do 
     if [ -d .git ]; then #if it's a git repo
         git status #get the status
-        #git pull #Pull changes 
-        echo $(date) Hi. >> notes$n.txt
+        touch $n.py
+        git pull #Pull changes 
         git add .; #Add all files
         git commit -m " Lazy Push " #Commit
         git push #Push
-        rm notes$n.txt
         echo -e "$greenback Commit $n was made $resetvid" #Say the push was successful
+        rm $n.py
         n=$(($n + 1));
+        
     else
         echo "Sorry,no Git Repo here" #if it's not a git repo ,abort
     fi;
-    d=$(($scale * 60));
+    d=$(($scale * 20));
     sleep $d; #Wait for the given interval time in seconds
 done
