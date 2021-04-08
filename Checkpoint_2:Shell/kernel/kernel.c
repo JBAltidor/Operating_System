@@ -61,6 +61,7 @@ void process_list(){
     clear_screen();
     int i=1;
     kprint("Men lis posesis yo :\n");
+    kprint("PID________Non________Adres\n");
     do{//placeholder for all running process
        char str[16]="";
        int_to_ascii(i, str);
@@ -72,9 +73,9 @@ void process_list(){
 void print_a_process(char* process_id, char* process_name, char* process_address)
 {
     kprint(process_id);
-    kprint("   ");
+    kprint("________");
     kprint(process_name);
-    kprint("   ");
+    kprint("________");
     kprint(process_address);
     kprint("\n");
 }
