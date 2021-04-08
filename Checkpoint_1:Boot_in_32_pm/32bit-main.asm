@@ -1,6 +1,6 @@
 [org 0x7c00] ; bootloader offset.Place le bootloader a l'adresse 0x7c00
-    mov bp, 0x9000 ; set the stack. La pile grandit en descendant, donc nous la placons a une adresse ou elle ne pourra pas "overwrite" nos donnees
-    mov sp, bp
+    mov bp, 0x9000 ; set the stack. La pile grandit en descendant, donc nous la placons a une adresse ou elle ne pourra pas "overwrite"/impacter nos donnees
+    mov sp, bp ; pour mettre bp dans sp
 
     mov bx, MSG_REAL_MODE
     call print ; Message indicant l'entree en mode 16 bit reel
